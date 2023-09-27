@@ -24,7 +24,7 @@ label.main-name {
     color: white;
     font-size: 50px;
     line-height: 55px;
-    padding: 0 50px;
+    padding: 0 10px;
     font-weight: bold;
 }
 
@@ -131,12 +131,12 @@ nav a:hover {
     font-weight: bold;
 }
 
-.nameintro {
+.intro {
     font-size: 25px;
     position: fixed;
     text-align: center;
     /*Centers content on screen */
-    top: 63%;
+    bottom: -20%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -144,6 +144,7 @@ nav a:hover {
     letter-spacing: 15px;
     text-transform: uppercase;
     font-weight: bold;
+    display: inline-block;
 
 }
 
@@ -455,11 +456,12 @@ button {
 
     .welcome,
     .welcomestyle2 {
-        font-size: 100px;
+        font-size: 70px;
     }
 
-    .nameintro {
-        font-size: 8px;
+    .intro {
+        font-size: 7px;
+        letter-spacing: 8px;
     }
 }
 
@@ -468,23 +470,23 @@ button {
 
     .welcome,
     .welcomestyle2 {
-        font-size: 110px;
+        font-size: 100px;
     }
 
-    .nameintro {
+    .intro {
         font-size: 10px;
     }
 }
 
 /*Size for medium devices*/
-@media only screen and (min-width: 768em) {
+@media only screen and (min-width: 768px) {
 
     .welcome,
     .welcomestyle2 {
-        font-size: 150px;
+        font-size: 125px;
     }
 
-    .nameintro {
+    .intro {
         font-size: 12px;
     }
 }
@@ -497,8 +499,8 @@ button {
         font-size: 175px;
     }
 
-    .nameintro {
-        font-size: 15px;
+    .intro {
+        font-size: 20px;
     }
 }
 
@@ -510,7 +512,7 @@ button {
         font-size: 200px;
     }
 
-    .nameintro {
-        font-size: 17px;
+    .intro {
+        font-size: 25px;
     }
 }
