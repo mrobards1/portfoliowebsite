@@ -1,70 +1,76 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mitch's Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <!--Allows use of font awesome icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mitch's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="./style.css">
+  <!--Allows use of font awesome icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <!--Place to provide links-->
+  <!--Place to provide links-->
 
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="button">
-            <i class="fa fa-bars"></i>
-            <!--Menu Icon-->
-        </label>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="button">
+      <i class="fa fa-bars"></i>
+      <!--Menu Icon-->
+    </label>
 
-        <label class="main-name">GMR</label>
-        <ul>
-            <li><a href="./index">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a class="active" href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
+    <label class="main-name">GMR</label>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a class="active" href="./portfolio.html">Portfolio</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
 
 
-    </nav>
-
+  </nav>
+  <main>
     <div class="card">
-        <img>
-        <div class="text">
-            <h1>Portfolio</h1>
-            <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-        </div>
+
+      <div class="text">
+        <h1>Portfolio</h1>
+        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+      </div>
     </div>
 
     <div class="card">
-        <img src="img/JustGoUp_1600x900.jpg">
-        <div class="text">
-            <h1>Just Go Up</h1>
-            <p>Crafted using the Unity Engine and C#, this short 2D platformer showcases a UI menu along with simple
-                platformer movements.</p>
-            <a target="_blank" href="https://mrobards.itch.io/just-go-up" class="img_button">View</a>
-        </div>
+      <img src="img/JustGoUp_1600x900.jpg">
+      <div class="text">
+        <h1>Just Go Up</h1>
+        <p>Created using the Unity Engine and C#, this short 2D platformer showcases a polished user interface along
+          with straightfoward platforming mechanics.</p>
+        <a target="_blank" href="https://mrobards.itch.io/just-go-up" class="img_button">View</a>
+      </div>
     </div>
 
     <div class="card">
-        <img src="img/Spacebound_1600x900.jpg">
-        <div class="text">
-            <h1>Space Bound</h1>
-            <p>As part of a collaborative team effort to develop a 3D game in Unity, my primary role involved crafting elements of the user
-                interface, enhancing specific aspects of in-game movement, and taking the lead in the design and
-                creation of Level 3.</p>
-                <a target="_blank" href="https://mrobards.itch.io/spacebound" class="img_button">View</a>
-        </div>
+      <img src="img/Spacebound_1600x900.jpg">
+      <div class="text">
+        <h1>Space Bound</h1>
+        <p>As part of a collaborative team effort to develop a 3D game in Unity, my primary role involved crafting
+          elements of the user
+          interface, enhancing specific aspects of in-game movement, and taking the lead in the design and
+          creation of Level 3.</p>
+        <a target="_blank" href="https://mrobards.itch.io/spacebound" class="img_button">View</a>
+      </div>
     </div>
+    <div class="push"></div>
+  </main>
+
+
+  <footer>
+    <p>Gary Mitchell Robards <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script></p> 
+  </footer>
 
 </body>
 
-<footer>
-    <p>Created by Mitch Robards</p>
-</footer>
+
 
 </html>
