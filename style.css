@@ -78,7 +78,7 @@ nav a:hover {
 }
 
 
-.highlighted-character { 
+.highlighted-character {
     color: #e98074;
 }
 
@@ -100,7 +100,7 @@ nav a:hover {
     text-transform: uppercase;
     position: relative;
     color: #e85a4f;
-    
+
 }
 
 .index-container p {
@@ -127,47 +127,62 @@ nav a:hover {
 
 
 .about-text {
-
     font-size: 25px;
     color: #8e8d8a;
     text-align: center;
     font-weight: bold;
     width: 80%;
     max-width: 700px;
-    height: auto;
-    margin-left: 10%;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
 
 }
 
-
-
-.page-backgrounds {
-    font-size: 650px;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: fixed;
-    color: #d8c3a5;
-    font-weight: bold;
-    opacity: 0.3;
+.skill_title {
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #e98074;
 }
 
-.page-backgroundsalt {
-    font-size: 650px;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: fixed;
-    color: #d8c3a5;
-    font-weight: bold;
-    opacity: 0.3;
-    display: none;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    justify-content: center;
 }
+
+.grid-item {
+    height: 85px;
+    width: 85px;
+    background-color: #e98074;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item:hover {
+    background-color: white;
+    color: #e98074;
+}
+
+.grid-item i {
+    font-size: 40px;
+}
+
+.grid-item p {
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
 
 .input-fields {
     margin-top: -120px;
@@ -190,6 +205,7 @@ form {
 
 }
 
+
 input,
 textarea {
     width: 100%;
@@ -199,8 +215,13 @@ textarea {
     font-size: 17px;
     border-radius: 3px;
     color: gray;
+    
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;
+}
+
+.custom-font {
+    font-family: 'YourFont', sans-serif;
+    /* Replace 'YourFont' with your desired font */
 }
 
 button {
@@ -237,7 +258,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: rgba(220, 220, 220, 0.5);
-    
+
 }
 
 footer p {
@@ -260,9 +281,9 @@ footer p {
 
 }
 
+
 .card::before {
     content: "";
-    background: rgba(0, 0, 0, .2);
     position: absolute;
     top: 0;
     left: 0;
@@ -293,6 +314,11 @@ footer p {
     text-transform: uppercase;
 }
 
+.card .portfolio-title,
+.card i {
+    color: #e98074;
+}
+
 .card p {
     font-size: 20px;
 }
@@ -302,7 +328,6 @@ footer p {
 .img_button {
     display: inline-block;
     background-color: white;
-    text-decoration: none;
     padding: 10px;
     width: 25%;
     color: #e98074;
@@ -314,7 +339,23 @@ footer p {
     text-decoration: none;
     text-transform: uppercase;
     margin: 1em;
+}
 
+.github_button {
+    margin-top: 10px;
+    display: inline-block;
+    color: #e98074;
+    font-weight: bold;
+    font-size: 60px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer .github_button {
+    font-size: 20px;
+    text-align: center;
 }
 
 .img_button:hover {
@@ -362,8 +403,7 @@ footer p {
         left: 0;
     }
 
-    .welcome
-    {
+    .welcome {
         font-size: 150px;
     }
 
@@ -375,8 +415,7 @@ footer p {
 /*Size for phone screens*/
 @media only screen and (max-width: 600px) {
 
-    .index-container h1
-     {
+    .index-container h1 {
         font-size: 65px;
     }
 
@@ -399,7 +438,7 @@ footer p {
 
     footer {
         height: 20px;
-        font-size: 10px;;
+        font-size: 10px;
     }
 
     .page-backgrounds {
@@ -416,8 +455,7 @@ footer p {
 /*Size for small devices*/
 @media only screen and (min-width: 600px) {
 
-    .index-container h1
-    {
+    .index-container h1 {
         font-size: 100px;
     }
 
@@ -443,8 +481,7 @@ footer p {
 /*Size for medium devices*/
 @media only screen and (min-width: 768px) {
 
-    .index-container h1
-    {
+    .index-container h1 {
         font-size: 125px;
     }
 
@@ -466,8 +503,7 @@ footer p {
 /*Size for large devices*/
 @media only screen and (min-width: 992px) {
 
-    .index-container h1
-    {
+    .index-container h1 {
         font-size: 175px;
     }
 
@@ -478,7 +514,7 @@ footer p {
     .about-text {
         font-size: 23px;
     }
-    
+
     .page-backgrounds {
         font-size: 550px;
 
@@ -489,8 +525,7 @@ footer p {
 /*Size for extra large devices*/
 @media only screen and (min-width: 1200px) {
 
-    .index-container h1
-    {
+    .index-container h1 {
         font-size: 200px;
     }
 
