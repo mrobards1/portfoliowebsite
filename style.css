@@ -219,10 +219,6 @@ textarea {
     font-weight: bold;
 }
 
-.custom-font {
-    font-family: 'YourFont', sans-serif;
-    /* Replace 'YourFont' with your desired font */
-}
 
 button {
     padding: 10px;
@@ -264,6 +260,7 @@ footer {
 footer p {
     text-transform: uppercase;
     font-weight: bold;
+    margin-top: -10px;
 }
 
 
@@ -344,18 +341,47 @@ footer p {
 .github_button {
     margin-top: 10px;
     display: inline-block;
-    color: #e98074;
     font-weight: bold;
     font-size: 60px;
     border: none;
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
 }
 
+.resume_button {
+    display: inline-block;
+    padding: 10px;
+    width: 25%;
+    font-weight: bold;
+    font-size: 25px;
+    border: none;
+    border-radius: 3em;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 1em;
+}
+
+
+
+.resume_button, .github_button {
+    background-color: #e98074;
+    color: white;
+}
+
+.resume_button:hover, .github_button:hover {
+    background-color: white;
+    color: #e98074;
+}
 footer .github_button {
     font-size: 20px;
     text-align: center;
+    height: 0px;
+    width: 0px;
 }
 
 .img_button:hover {
