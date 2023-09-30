@@ -16,7 +16,7 @@ body {
 nav {
     height: 55px;
     width: 100%;
-    background: rgba(220, 220, 220, 0.5);
+    background: rgba(220, 220, 220, 0.97);
     position: fixed;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     z-index: 1;
@@ -100,7 +100,6 @@ nav a:hover {
     text-transform: uppercase;
     position: relative;
     color: #e85a4f;
-
 }
 
 .index-container p {
@@ -146,7 +145,7 @@ nav a:hover {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
     max-width: 400px;
     margin: 0 auto;
     justify-content: center;
@@ -213,21 +212,21 @@ textarea {
     outline: 0;
     border: solid white;
     font-size: 17px;
-    border-radius: 3px;
+    border-radius: 10px;
     color: gray;
-    
+
     font-weight: bold;
 }
 
 
 button {
     padding: 10px;
-    width: 60%;
+    width: 20%;
     color: #e98074;
     font-weight: bold;
     font-size: 17px;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     background-color: white;
     cursor: pointer;
     display: block;
@@ -368,20 +367,24 @@ footer p {
 
 
 
-.resume_button, .github_button {
+.resume_button,
+.github_button {
     background-color: #e98074;
     color: white;
 }
 
-.resume_button:hover, .github_button:hover {
+.resume_button:hover,
+.github_button:hover {
     background-color: white;
     color: #e98074;
 }
+
 footer .github_button {
     font-size: 20px;
     text-align: center;
     height: 0px;
     width: 0px;
+    color: #e98074;
 }
 
 .img_button:hover {
@@ -396,6 +399,7 @@ footer .github_button {
     font-size: 75px;
 }
 
+/* Controls nav menu when screen is smaller */
 @media (max-width: 900px) {
     .button {
         display: block;
@@ -450,7 +454,7 @@ footer .github_button {
     }
 
     .title-style {
-        font-size: 70px;
+        font-size: 60px;
     }
 
     .about-text {
@@ -474,6 +478,55 @@ footer .github_button {
     .page-backgroundsalt {
         display: block;
         font-size: 500px;
+    }
+
+    .skill_title {
+        font-size: 50px;
+    }
+
+    .grid-container {
+        grid-gap: 10px;
+        max-width: 200px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .grid-item {
+        height: 60px;
+        width: 60px;
+    }
+
+    .grid-item i {
+        font-size: 30px;
+    }
+
+    .grid-item p {
+        margin-top: 10px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .resume_button {
+        font-size: 18px;
+    }
+
+    .github_button {
+        font-size: 40px;
+        height: 47px;
+        width: 47px;
+    }
+
+    footer .github_button {
+        font-size: 13px;
+    }
+
+    .card h1, .card i {
+        font-size: 55px;
+    }
+
+
+    .card p {
+        font-size: 15px;
     }
 
 }
@@ -501,6 +554,7 @@ footer .github_button {
         font-size: 450px;
 
     }
+
 
 }
 
