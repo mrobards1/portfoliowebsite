@@ -178,7 +178,7 @@ nav a:hover {
     margin-top: 10px;
     text-transform: uppercase;
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
     white-space: nowrap;
 }
 
@@ -501,7 +501,7 @@ footer .github_button {
 
     .grid-item p {
         margin-top: 10px;
-        font-size: 11px;
+        font-size: 8px;
         white-space: nowrap;
     }
 
