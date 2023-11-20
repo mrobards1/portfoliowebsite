@@ -398,6 +398,8 @@ footer .github_button {
     font-size: 75px;
 }
 
+
+
 /* Controls nav menu when screen is smaller */
 @media (max-width: 900px) {
     .button {
@@ -436,6 +438,12 @@ footer .github_button {
         font-size: 150px;
     }
 
+}
+
+
+
+.drum_machine_img {
+    filter: blur(6px);
 }
 
 
