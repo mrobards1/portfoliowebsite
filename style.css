@@ -274,6 +274,7 @@ footer p {
     position: sticky;
     top: 0;
     background-color: #eae7dc;
+    overflow: hidden;
 
 }
 
@@ -445,6 +446,15 @@ footer .github_button {
 
 .drum_machine_img {
     filter: blur(6px);
+}
+
+.weatherCard {
+    background-color: rgba(45, 89, 135, 0.7);
+}
+
+.weather_img {
+    filter: blur(7px);
+    
 }
 
 
